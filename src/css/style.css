@@ -1,6 +1,7 @@
 body {
   height: 100vh;
   min-width: 320px;
+  background-color:rgb(24, 25, 25);
 }
 
 .main-wrapper {
@@ -27,7 +28,7 @@ body {
   height: 50px;
 }
 
-.nav {
+header nav {
   width: 100%;
   display: flex;
   align-items: center;
@@ -39,9 +40,9 @@ body {
   transform: translateX(-50%);
 }
 
-.nav a {
+header nav a {
   text-decoration: none;
-  color: darkslategrey;
+  color:rgb(213, 213, 213);
 }
 
 .button-group {
@@ -60,17 +61,25 @@ body {
 
 .search input {
   width: 100%;
+  background-color: rgb(79, 72, 72);
+  border: none;
+  border-radius: 10px;
+  padding: 0.2rem 0.5rem;
+}
+
+.search input::placeholder {
+  color:rgb(213, 213, 213);
 }
 
 .search i {
   position: absolute;
   right: 10px;
-  color: #1AA3F3;
+  color:rgb(24, 129, 189);
   transform: scaleX(-1);
 }
 
 .notifications {
-  color: #1AA3F3;
+  color:rgb(24, 129, 189);
   font-size: 1.5rem;
 }
 
@@ -263,7 +272,7 @@ footer img {
   header {
     height: 50px;
   }
-  .nav {
+  header nav {
     top: 0;
     margin: 0 auto;
   }
