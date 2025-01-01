@@ -80,6 +80,94 @@ body {
   border-radius: 100%;
 }
 
+main {
+  background:
+    linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%),
+    url("https://s3picturehouses.s3.eu-central-1.amazonaws.com/header/ph_166325134663233392d1d86.jpg");
+  background-position: top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  padding: 2.8rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  color: white;
+}
+
+main h1 {
+  font-size: 2.5rem;
+  line-height: 1.8rem;
+}
+
+.movie-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-ratings {
+  color: gray;
+}
+
+.user-ratings b {
+  color: black;
+}
+
+.user-rating {
+  color: #FF0000;
+}
+
+.maturity-rating {
+  border: 1px solid black;
+  padding: 0 0.3rem;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  line-height: 1rem;
+}
+
+.movie-summary {
+  line-height: 1.2rem;
+  max-width: 60%;
+}
+
+.movie-details {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0;
+}
+
+.movie-details li {
+  font-size: 0.9rem;
+  display: flex;
+  gap: 0.3rem;
+  width: 100%;
+  font-weight: 600;
+}
+
+.movie-details li > p:first-of-type {
+  color: #FF0000;
+}
+
+.btn {
+  background-color: #FF0000;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.4rem;
+  padding: 0.7rem 0.8rem;
+  border-radius: 10px;
+  border: none;
+}
+
+main .btn-lg {
+  width: 130px;
+}
+
 footer {
   margin-top: auto;
   border-top: 1px solid gray;
