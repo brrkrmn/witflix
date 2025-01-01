@@ -14,6 +14,7 @@ body {
 }
 
  header {
+  flex-shrink: 0;
   height: 80px;
   display: flex;
   align-items: flex-start;
@@ -85,10 +86,10 @@ main {
     linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%),
     url("https://s3picturehouses.s3.eu-central-1.amazonaws.com/header/ph_166325134663233392d1d86.jpg");
   background-position: top;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
   border-radius: 20px;
-  padding: 2.8rem 2rem;
+  padding: 2.5rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -98,7 +99,6 @@ main {
 
 main h1 {
   font-size: 2.5rem;
-  line-height: 1.8rem;
 }
 
 .movie-info {
@@ -108,11 +108,11 @@ main h1 {
 }
 
 .user-ratings {
-  color: gray;
+  color: silver;
 }
 
 .user-ratings b {
-  color: black;
+  color: white;
 }
 
 .user-rating {
@@ -120,7 +120,7 @@ main h1 {
 }
 
 .maturity-rating {
-  border: 1px solid black;
+  border: 1px solid white;
   padding: 0 0.3rem;
   font-size: 0.9rem;
   border-radius: 4px;
@@ -272,6 +272,34 @@ footer img {
   }
   footer nav {
     gap: 3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  main h1 {
+    font-size: 2rem;
+  }
+  main .movie-info {
+    font-size: 0.8rem;
+    flex-wrap: wrap
+  }
+  .movie-details li {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: horizontal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media (max-width: 768px) {
+  .movie-summary {
+    max-width: 100%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
