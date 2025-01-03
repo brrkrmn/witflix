@@ -439,7 +439,6 @@ footer img {
     text-overflow: ellipsis;
   }
   .suggestion-item {
-    width: 100%;
     flex: 1 1 40%;
   }
   .suggestion-item:nth-child(n+5) {
